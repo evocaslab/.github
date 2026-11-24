@@ -8,10 +8,9 @@ We build small, sharp tools and the apps that use them, and we keep them honest 
 
 ## Public tools
 
-Tools appear here as each one passes its public-ready check (licence, brand kit, architecture docs, release pipeline).
-The first ones in preparation: a repo dossier checker, a brand-kit generator, an SVG safety checker, an architecture
-mapper and a shared UI kit.
+Tools appear here as each one is released.
 
-## Contributing and security
+## Security and contributing
 
-Each repo has its own `CONTRIBUTING.md` and `SECURITY.md`. Report a vulnerability privately, never in a public issue.
+Report a vulnerability privately, never in a public issue: see [SECURITY.md](SECURITY.md). Contributions: see
+[CONTRIBUTING.md](CONTRIBUTING.md) and each repo's own file.
