@@ -11,3 +11,15 @@ This repo must stay public: making it private removes the profile page and the d
 `SECURITY.md` and `CONTRIBUTING.md`; a code of conduct and `workflow-templates/` come when needed.
 
 Keep it short and free of anything private: no repo names that are not public yet, no names of people or clients.
+
+Checks: `prek run --all-files` (whitespace, YAML, TOML, markdownlint, gitleaks); the `gate` job runs the same on every
+push and pull request.
+
+## License
+
+Documentation and text (every `*.md` file): CC BY 4.0 (`LICENSES/CC-BY-4.0.txt`). Workflows and configuration: licensed
+under either of the Apache License 2.0 (`LICENSE-APACHE`) or the MIT license (`LICENSE-MIT`), at your option. The
+EvoCAS Lab name and logo are not licensed by these terms.
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as
+defined in the Apache-2.0 license, shall be licensed as above, without any additional terms or conditions.

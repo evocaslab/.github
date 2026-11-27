@@ -1,0 +1,4 @@
+# Structural markdown checks; line length is kept by review (about 120 characters).
+default: true
+MD013: false  # line length
+MD041: false  # first line a heading
