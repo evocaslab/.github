@@ -2,10 +2,10 @@ version = 1
 
 [[annotations]]
 path = [".github/**", ".gitignore", ".pre-commit-config.yaml", ".markdownlint.yaml", "REUSE.toml"]
-SPDX-FileCopyrightText = "2026 Evocas Lab contributors"
+SPDX-FileCopyrightText = "2026 EvoCASLab contributors"
 SPDX-License-Identifier = "MIT OR Apache-2.0"
 
 [[annotations]]
 path = ["**/*.md"]
-SPDX-FileCopyrightText = "2026 Evocas Lab contributors"
+SPDX-FileCopyrightText = "2026 EvoCASLab contributors"
 SPDX-License-Identifier = "CC-BY-4.0"
