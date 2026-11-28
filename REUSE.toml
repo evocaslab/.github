@@ -1,7 +1,8 @@
 version = 1
 
 [[annotations]]
-path = [".github/**", ".gitignore", ".pre-commit-config.yaml", ".markdownlint.yaml", "REUSE.toml"]
+path = [".github/**", ".claude/settings.json", ".gitignore", ".pre-commit-config.yaml", ".markdownlint.yaml", "REUSE.toml",
+  "needs.yaml", "scripts/**"]
 SPDX-FileCopyrightText = "2026 EvoCASLab contributors"
 SPDX-License-Identifier = "MIT OR Apache-2.0"
 

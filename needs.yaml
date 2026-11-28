@@ -1,0 +1,16 @@
+# needs.yaml: what this repo needs, by context. Convention: HQ practices/needs-by-context.md (v1).
+# contexts: run | develop | test | ci | release.  level: required | optional.  Never a secret value.
+# Docs and configuration only: nothing is built or released; the gate is `prek run --all-files`.
+version: 1
+needs:
+  - {kind: tool, name: git, contexts: [develop, ci], level: required, why: "version control and worktrees",
+     check: command, fix: install git}
+  - {kind: tool, name: prek, min: "0.5.10", contexts: [develop, ci], level: required,
+     why: "runs the gate hooks (CI pins the same version)", check: command, fix: uv tool install prek}
+  - {kind: tool, name: uv, contexts: [develop, ci], level: required, why: "runs scripts/needs.py, the needs checker",
+     check: command,
+     fix: "curl -LsSf https://astral.sh/uv/install.sh | sh"}  # bulwark:ignore agent-pipe-to-shell install hint text, never run by a script
+  - {kind: tool, name: node, contexts: [develop, ci], level: required, why: "prek runs the markdownlint hook on Node",
+     check: command, fix: "install Node LTS (https://nodejs.org)"}
+  - {kind: tool, name: gh, contexts: [develop], level: optional, fallback: "use the GitHub web UI",
+     why: "issues and pull requests", check: command, fix: "install GitHub CLI, then: gh auth login"}

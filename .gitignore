@@ -1,3 +1,4 @@
-# Local agent worktrees and settings.
-.claude/
+# Local agent worktrees and settings; the shared deny list .claude/settings.json is tracked.
+.claude/*
+!.claude/settings.json
 .worktrees/
